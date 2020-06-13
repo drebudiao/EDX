@@ -40,7 +40,7 @@ table, th, td {
 tr:nth-child(odd) {background-color: #f2fff2;}
 
 th {
-	color: white
+	color: white;
 	background-color: darkgreen;
 }
 
