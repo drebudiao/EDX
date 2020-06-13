@@ -1,19 +1,22 @@
 /* This is the My Chord Book CSS Stylesheet */
+
 /* =================================================*/
 /* This portion applies to all Pages                */
 /* =================================================*/
 @media only screen and (max-width: 600px) {
-  #banner {
-    width: 400px;
-  }
+	#banner {
+		width:400px;
+	}
 }
+
 @media only screen and (min-width: 601px) {
-  #banner {
-    width: 50%;
-  }
+	#banner {
+		width:50%;
+	}
 }
+
 body {
-  padding: 15px;
+	padding: 15px;
 }
 
 /* ===================================================*/
@@ -21,41 +24,42 @@ body {
 /* Main pages are: Home, Favorites, Song Index, About */
 /* ===================================================*/
 h1.PageHeader {
-  color: Green;
-  background-color: white;
+	color: Green;
+	background-color: white;
 }
 
 table#SongTable {
   border-collapse: collapse;
   width: 50%;
   border: 1px solid black;
-  padding: 15px;
-}
-table#SongTable th {
-  color: white;
-  background-color: darkgreen;
-  border: 1px solid black;
-  padding: 15px;
-}
-table#SongTable td {
-  border: 1px solid black;
-  padding: 15px;
+  padding: 15px;  
+  
+  th {
+	color: white;
+	background-color: darkgreen;	
+    border: 1px solid black;
+	padding: 15px;
+  }
+  
+  td {
+	border: 1px solid black;
+	padding: 15px;  
+  }
 }
 
-table#SongTable tr:nth-child(odd) {
-  background-color: lightgreen;
-}
+
+table#SongTable tr:nth-child(odd) {background-color: lightgreen;}
+
 
 /* =================================================*/
 /* This portion is for the Song Chords Pages        */
 /* =================================================*/
 h1#SongName {
-  color: Blue;
-  background-color: white;
+	color: Blue;
+	background-color: white;
 }
 
 pre.SongChords {
-  font-size: 15px;
+	font-size: 15px; 
 }
 
-/*# sourceMappingURL=mysite.css.map */
