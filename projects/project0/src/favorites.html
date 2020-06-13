@@ -13,7 +13,7 @@
   </head>
   
   <body>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="./home.html">MyChordBook.com</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -36,22 +36,26 @@
 	In the future, this should contain all songs that were tagged favorite by the user <br>
 	</p>
 	
-	<p>
-		<table id="SongTable">
-			<tr>
-				<th>Song Name</th>
-				<th>Singer</th>
-			</tr>
-			<tr>
-				<td><a href="./chords/perfect.html">Perfect</a></td>
-				<td>Ed Sheeran</td>
-			</tr>
-			<tr>
-				<td><a href="./chords/heyjude.html">Hey Jude</a></td>
-				<td>Beatles</td>
-			</tr>
-		</table>
-	</p>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6">
+				<table id="SongTable">
+					<tr>
+						<th>Song Name</th>
+						<th>Singer</th>
+					</tr>
+					<tr>
+						<td><a href="./chords/perfect.html">Perfect</a></td>
+						<td>Ed Sheeran</td>
+					</tr>
+					<tr>
+						<td><a href="./chords/heyjude.html">Hey Jude</a></td>
+						<td>Beatles</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
