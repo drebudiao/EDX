@@ -6,7 +6,20 @@ h1 {
 @media only screen and (max-width: 600px) {
 	body {
 		color: Black;
-		background-color: lightblue;
+	}
+	
+	#banner {
+		width:400px;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	body {
+		color: Black;
+	}
+	
+	#banner {
+		width:50%;
 	}
 }
 
@@ -24,11 +37,12 @@ table, th, td {
   padding: 15px;
 }
 
-th {
-	background-color: lightgreen;
-}
-
 tr:nth-child(odd) {background-color: #f2fff2;}
+
+th {
+	color: white
+	background-color: darkgreen;
+}
 
 pre {
 	font-size: 15px; 
