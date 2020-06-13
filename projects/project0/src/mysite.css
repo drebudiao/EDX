@@ -25,23 +25,19 @@ h1.PageHeader {
   background-color: white;
 }
 
-table#SongTable {
-  border-collapse: collapse;
-  width: 50%;
-  border: 1px solid black;
-  padding: 15px;
-}
-table#SongTable th {
-  color: white;
-  background-color: darkgreen;
-  border: 1px solid black;
-  padding: 15px;
-}
-table#SongTable td {
+table#SongTable td, table#SongTable th, table#SongTable {
   border: 1px solid black;
   padding: 15px;
 }
 
+table#SongTable {
+  border-collapse: collapse;
+  width: 50%;
+}
+table#SongTable th {
+  color: white;
+  background-color: darkgreen;
+}
 table#SongTable tr:nth-child(odd) {
   background-color: lightgreen;
 }

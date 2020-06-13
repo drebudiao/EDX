@@ -3,6 +3,8 @@
 /* =================================================*/
 /* This portion applies to all Pages                */
 /* =================================================*/
+$GlobalPadding: 15px;
+
 @media only screen and (max-width: 600px) {
 	#banner {
 		width:400px;
@@ -16,7 +18,7 @@
 }
 
 body {
-	padding: 15px;
+	padding: $GlobalPadding;
 }
 
 /* ===================================================*/
@@ -28,28 +30,30 @@ h1.PageHeader {
 	background-color: white;
 }
 
+$SongTableBackColor: darkgreen;
+
+%SongTableProp {
+  border: 1px solid black;
+  padding: $GlobalPadding;
+}
+
 table#SongTable {
+  @extend %SongTableProp;
   border-collapse: collapse;
   width: 50%;
-  border: 1px solid black;
-  padding: 15px;  
   
   th {
+	@extend %SongTableProp;
 	color: white;
-	background-color: darkgreen;	
-    border: 1px solid black;
-	padding: 15px;
+	background-color: $SongTableBackColor;	
   }
   
   td {
-	border: 1px solid black;
-	padding: 15px;  
+	@extend %SongTableProp;
   }
+  
+  tr:nth-child(odd) {background-color: lightgreen;}
 }
-
-
-table#SongTable tr:nth-child(odd) {background-color: lightgreen;}
-
 
 /* =================================================*/
 /* This portion is for the Song Chords Pages        */
